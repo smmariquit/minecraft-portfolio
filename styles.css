@@ -71,6 +71,9 @@ body {
   text-decoration: none;
   letter-spacing: 1px;
   transition: opacity 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 .nav-brand:hover { opacity: 0.8; }
 .nav-links { display: flex; gap: 2rem; list-style: none; }
