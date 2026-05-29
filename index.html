@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stimmie — Minecraft Server Portfolio</title>
+  <meta name="description" content="I've spent the last 10 years building and managing Minecraft servers — from small friend groups to communities of thousands. Here's what I've done.">
+  <meta property="og:title" content="Stimmie — Minecraft Server Portfolio">
+  <meta property="og:description" content="10+ years of Minecraft server administration, plugin development, and community building.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+  <a href="#" class="nav-brand">stimmie.mc</a>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#servers">Servers</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-greeting">Hi, I'm Stimmie.</p>
+    <h1 class="hero-title">
+      I've been running<br>Minecraft <span class="gold">servers</span><br>for 10 years.
+    </h1>
+    <p class="hero-desc">
+      Survival SMPs, modded setups for friends, and university communities. I just like making places for people to play together.
+    </p>
+    <div class="hero-meta">
+      <div class="meta-item">
+        <span class="meta-value">10+</span>
+        <span class="meta-label">Years</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-value">40K+</span>
+        <span class="meta-label">Players</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-value">8+</span>
+        <span class="meta-label">Servers</span>
+      </div>
+    </div>
+    <div class="hero-cta">
+      <a href="#servers" class="btn btn-primary">See my work</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <p class="section-label">About</p>
+      <h2 class="section-title">A bit of background.</h2>
+    </div>
+    <div class="about-content">
+      <div class="about-text animate-on-scroll">
+        <p>
+          I started making servers when I was 13 just to play with friends, but it eventually became a serious hobby. Learned Linux, Java, and Docker along the way.
+        </p>
+        <p>
+          My biggest project was <a href="https://hearthcraft.stimmie.dev" target="_blank" rel="noopener" style="color: var(--warm-gold); text-decoration: none; font-weight: 500;">HearthCraft</a>, a server that ran for 7 years and had over 40,000 players join. I handled the infrastructure and custom plugins, and worked alongside an amazing staff team to manage the community.
+        </p>
+        <p>
+          I'm used to dealing with dedicated servers, tracking down lag spikes, securing the backend, and configuring plugins so they actually fit what the players want.
+        </p>
+      </div>
+      <div class="about-aside animate-on-scroll">
+        <h3>Software Engineering</h3>
+        <p>
+          I also do normal programming stuff like web apps and data science. Check out my <a href="https://github.com/smmariquit" target="_blank" rel="noopener" style="color: var(--soft-aqua); text-decoration: none;">GitHub</a>.
+        </p>
+        <div class="aside-divider"></div>
+        <h3>Docs</h3>
+        <p>
+          I helped write guides for <a href="https://docs.bloom.host" target="_blank" rel="noopener" style="color: var(--soft-aqua); text-decoration: none;">Bloom.host</a>.
+        </p>
+        <div class="aside-divider"></div>
+        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+          <a href="https://builtbybit.com/members/himitsu.141037/" target="_blank" rel="noopener" class="marketplace-link" style="margin-top: 0;">
+            → BuiltByBit profile (Himitsu)
+          </a>
+          <a href="https://www.planetminecraft.com/member/keizizze/" target="_blank" rel="noopener" class="marketplace-link" style="margin-top: 0;">
+            → PlanetMinecraft (keizizze)
+          </a>
+          <a href="https://www.spigotmc.org/members/swagmc123.385974/" target="_blank" rel="noopener" class="marketplace-link" style="margin-top: 0;">
+            → SpigotMC (swagmc123)
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <p class="section-label">Skills</p>
+      <h2 class="section-title">What I work with.</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card animate-on-scroll">
+        <div class="skill-icon">🖥️</div>
+        <h3>Servers & Hosting</h3>
+        <p>Setting up Linux boxes from scratch. Mostly using Docker and Pterodactyl these days.</p>
+
+      </div>
+      <div class="skill-card animate-on-scroll">
+        <div class="skill-icon">⚡</div>
+        <h3>Fixing Lag</h3>
+        <p>Keeping the server at 20 TPS. Reading Spark profiles, tuning JVM flags, and limiting chunk hoppers.</p>
+
+      </div>
+      <div class="skill-card animate-on-scroll">
+        <div class="skill-icon">🔌</div>
+        <h3>Plugins & Configs</h3>
+        <p>Writing custom Java plugins when needed, and spending hours in YAML files getting setups right.</p>
+
+      </div>
+      <div class="skill-card animate-on-scroll">
+        <div class="skill-icon">🛡️</div>
+        <h3>Security</h3>
+        <p>Basic firewall rules, configuring LuckPerms properly, and dealing with anti-cheats.</p>
+
+      </div>
+      <div class="skill-card animate-on-scroll">
+        <div class="skill-icon">🌐</div>
+        <h3>Proxies & DNS</h3>
+        <p>Linking servers with Velocity or BungeeCord. Pointing domains and setting up SRV records.</p>
+
+      </div>
+      <div class="skill-card animate-on-scroll">
+        <div class="skill-icon">👥</div>
+        <h3>Community</h3>
+        <p>Handling the human side. Staff management, Discord bots, and dealing with player reports.</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Servers Timeline -->
+<section id="servers">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <p class="section-label">Servers</p>
+      <h2 class="section-title">Servers I've managed.</h2>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item animate-on-scroll">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">2015 – 2016</span>
+          <h3>AllMightyPVP</h3>
+          <span class="timeline-role">Server Owner · OP Factions</span>
+          <p>My first server. Figured out how to configure plugins and balance an economy here.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item animate-on-scroll">
+        <div class="timeline-dot" style="border-color: var(--warm-gold);"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">2018 – ~2025 · ~7 years</span>
+          <h3><a href="https://hearthcraft.stimmie.dev" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">HearthCraft</a></h3>
+          <span class="timeline-role">Founder & Lead Admin · Survival SMP</span>
+          <p>My biggest project. A no-reset SMP with 40k+ unique joins. I ran the bare-metal servers, wrote custom plugins, and managed the staff team.</p>
+          <span class="timeline-badge badge-flagship">Flagship</span>
+        </div>
+      </div>
+
+      <div class="timeline-item animate-on-scroll">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">Oct 2021 – Jan 2022</span>
+          <h3>OrbitNode</h3>
+          <span class="timeline-role">Support Staff</span>
+          <p>The host doesn't exist anymore, but I spent a few months here resolving technical tickets for clients.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item animate-on-scroll">
+        <div class="timeline-dot aqua"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">Consulting</span>
+          <h3>SoupMC</h3>
+          <span class="timeline-role">Technical Consultant</span>
+          <p>Helped them optimize their setup and gave advice on what plugins to use.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item animate-on-scroll">
+        <div class="timeline-dot purple"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">Past</span>
+          <h3>Bloom.host Docs</h3>
+          <span class="timeline-role">Contributor</span>
+          <p>I wrote and updated guides for <a href="https://docs.bloom.host" target="_blank" rel="noopener" style="color: var(--soft-aqua)">docs.bloom.host</a> to help other server owners.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item animate-on-scroll">
+        <div class="timeline-dot green"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">University</span>
+          <h3>DLSU ID 123 Server</h3>
+          <span class="timeline-role">Server Admin</span>
+          <p>Just a chill server I set up for De La Salle University students to play together.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item animate-on-scroll">
+        <div class="timeline-dot" style="border-color: var(--warm-gold);"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">University</span>
+          <h3>UPLB Batch 2024 Server</h3>
+          <span class="timeline-role">Lead Administrator</span>
+          <p>Set up the official Minecraft server for UPLB Batch 2024. Handled all the tech stuff.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item animate-on-scroll">
+        <div class="timeline-dot" style="border-color: var(--warm-gold);"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">University</span>
+          <h3>UPLB Batch 2026 Server</h3>
+          <span class="timeline-role">Lead Administrator</span>
+          <p>Did the same thing for the next batch. Hosted it, managed plugins, kept it running.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item animate-on-scroll">
+        <div class="timeline-dot green"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">Various</span>
+          <h3>Custom Setups</h3>
+          <span class="timeline-role">Server Builder</span>
+          <p>I've also made a bunch of smaller servers for friends—Pixelmon, modpacks, you name it.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="cta-section">
+  <div class="container">
+    <div class="animate-on-scroll">
+      <h2>Get in touch.</h2>
+      <p>
+        New server, optimization, or just a question — happy to chat.
+      </p>
+      <div class="cta-links">
+        <a href="https://stimmie.dev" target="_blank" rel="noopener" class="btn btn-primary">stimmie.dev</a>
+        <a href="https://github.com/smmariquit" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+        <a href="https://builtbybit.com/members/himitsu.141037/" target="_blank" rel="noopener" class="btn btn-ghost">BuiltByBit</a>
+        <a href="https://www.planetminecraft.com/member/keizizze/" target="_blank" rel="noopener" class="btn btn-ghost">PlanetMinecraft</a>
+        <a href="https://www.spigotmc.org/members/swagmc123.385974/" target="_blank" rel="noopener" class="btn btn-ghost">SpigotMC</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2026 <a href="https://stimmie.dev" target="_blank" rel="noopener">Stimmie</a></p>
+  <p class="disclaimer">Not affiliated with Mojang Studios. Minecraft is a trademark of Mojang Studios.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
